@@ -10,7 +10,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Palatino", "Libre Baskerville", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
 }
 
@@ -77,7 +77,7 @@ q:after {
 
 blockquote {
   /*background-color: #F8F8F8;*/
-  border-left: 2px solid #AFC0D2;
+  border-left: 2px solid #9da790;
   margin: 1.6em 10%;
   padding: .75em 1em;
   font-size:1.8rem;
@@ -98,14 +98,26 @@ html {
   /* background-color: #f0f0f0; */ /* Light grey background */
 }
 body {
-  max-width:800px;
+  max-width:900px;
   margin:25px auto;
 }
 header, #content, footer { 
-  background: #ffffff; /* White background */
+  background: #f1f9e9; /* Background color for content */
   padding:25px;
   color:#000; 
 }
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center; /* This will vertically center align the items */
+  justify-content: center; /* This aligns items to the start of the footer */
+}
+
+footer a {
+  margin-right: 10px; /* Adds some space between the image and the text */
+}
+
 
 /* Menu Links */
 ul.main-menu {
@@ -120,14 +132,14 @@ ul.main-menu li a {
   margin-right:20px;
   font-size:2.0rem;
   border-bottom: solid transparent 3px;
-  color:#cfd2da;
+  color:#616b52;
 }
 ul.main-menu li a:hover {
   color:#000;
 }
 ul.main-menu li a.active {
   color:#000;
-  border-bottom-color:#EF6D3D;
+  border-bottom-color:#616b52;
 }
 
 /* Utility classes */
