@@ -94,15 +94,16 @@ blockquote p:last-child {
 html, #container, .inner { background-color:transparent;}
 html {
   background-size:cover;
+  background-color: #f0f0f0; /* Light grey background */
 }
 body {
   max-width:800px;
   margin:25px auto;
 }
 header, #content, footer { 
-  background: rgba(0,0,0,.8); 
+  background: #ffffff; /* White background */
   padding:25px;
-  color:#FFFFFF; 
+  color:#000; 
 }
 
 /* Menu Links */
