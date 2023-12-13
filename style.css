@@ -137,5 +137,11 @@ ul.main-menu li a.active {
   display:block;
 }
 
+/* Image Centered */
+img {
+    display: block;
+    margin: 0 auto;
+}
+
 
 
