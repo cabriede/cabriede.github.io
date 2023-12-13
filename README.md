@@ -1,3 +1,3 @@
-Repository that serves as back-end for website: https://cabriede.github.io
+Repository serves as a back-end for the website: https://cabriede.github.io
 
 
