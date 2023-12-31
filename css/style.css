@@ -142,6 +142,10 @@ blockquote p:last-child {
 
 /* Additional styles for phone & tablet screens */
 @media screen and (max-width: 800px) {
+  .content-region {
+    align-items: center; 
+    margin: 0% 2.5% 0% 2.5%; 
+  }
   .columns-container {
     flex-direction: column; /* Stack items vertically */
   }
@@ -154,4 +158,7 @@ blockquote p:last-child {
     width: 100% !important;
   }
   p{text-align: start;}
+  .scroll-container {
+    width: 90%; 
+  }
 }
