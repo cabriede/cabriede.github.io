@@ -153,4 +153,5 @@ blockquote p:last-child {
   img{
     width: 100% !important;
   }
+  p{text-align: start;}
 }

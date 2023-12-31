@@ -55,9 +55,6 @@ ul.main-menu li a.active {
 .dropdown-content a:hover {
   color: #000;
 }
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 /* Style for the dropdown link */
 .dropdown > a:after {
   content: "";
