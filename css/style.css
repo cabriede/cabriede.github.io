@@ -3,11 +3,39 @@ html {
   font-size: 70%;
 }
 body {
-  font-size: 1.6em; 
+  font-size: 1.6rem; 
   line-height: 1.6;
   font-weight: 400;
   font-family: "Palatino", "Libre Baskerville", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+h1 {
+  font-size: 2.25em; 
+  margin-top: 2rem; 
+  color: #375015;
+}
+h2 {font-size: 1.5em;}
+h3 {
+  font-size: 1.25em;
+  margin-top: 1rem; 
+  margin-bottom: 1.5rem; 
+  font-weight: 400;
+}
+
+/* Paragraphs */
+p {
+  margin: 0% 0% 2% 0%; 
+  text-align: justify;
 }
 
 /* Utility classes */
@@ -33,30 +61,6 @@ a {
 a:hover {
   outline: thin dotted;
   text-decoration: underline;
-}
-
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: auto;
-  line-height: 1;
-  text-rendering: optimizeLegibility; /*  voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
-  margin-top: 0;
-  margin-bottom: 3rem;
-  font-weight: 300;
-  text-align: center;
-}
-h1 {margin-top: 2rem; color:#375015;}
-h3 {margin-top: 1rem; margin-bottom: 1.5rem; font-weight: 400;}
-
-/* Paragraphs */
-p {
-  margin: 0% 0% 2% 0%; 
-  text-align: justify;
 }
 
 /* Content regions */
@@ -136,5 +140,17 @@ blockquote p:last-child {
 }
 
 
-
-
+/* Additional styles for phone & tablet screens */
+@media screen and (max-width: 800px) {
+  .columns-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+  .side-image {
+    width: 100% !important; 
+    margin-left: 0 !important; 
+    margin-right: 0 !important; 
+  }
+  img{
+    width: 100% !important;
+  }
+}
