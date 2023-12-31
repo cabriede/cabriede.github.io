@@ -1,0 +1,26 @@
+/* Background */
+html, #container, .inner { background-color:transparent;}
+html {
+  background:url(/images/background2.jpg) center center no-repeat fixed;
+  background-size:cover;
+  /* background-color: #f0f0f0; */ /* Light grey background */
+}
+body {
+  max-width:1100px;
+  margin:25px auto;
+}
+header, #content, footer { 
+  background: #f1f9e9; /* Background color for content */
+  padding:25px;
+  color:#000; 
+}
+/* Footer */
+footer {
+  display: flex;
+  align-items: center; /* This will vertically center align the items */
+  justify-content: center; /* This aligns items to the start of the footer */
+}
+footer a {
+  margin-right: 10px; /* Adds some space between the image and the text */
+}
+

@@ -1,96 +1,80 @@
 <!doctype html>
 <html>
-  <head>
-    <!-- Page setup -->
-    <meta charset="utf-8">
-    <title>Rev. Chloe Briede</title>
-    <meta name="description" content="Chloe Briede's Ministry Website">
-    <meta name="author" content="Chloe Briede">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
-  
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
-    
-  </head>
-  
-  <body>
-    <!-- Header -->
-    <header id="header">
-      <h1>Rev. Chlo&euml Bried&eacute</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+<head>
+  <!-- Page setup -->
+  <meta charset="utf-8">
+  <title>Rev. Chloë Briedé</title>
+  <meta name="description" content="Chloe Briede's Ministry Website">
+  <meta name="author" content="Chloe Briede">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Stylesheets; Reset default styles and add support for google fonts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+
+  <!-- Custom styles -->
+  <link href="css/layout.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/menu.css" rel="stylesheet" type="text/css" />
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header">
+
+    <h1>Rev. Chlo&euml Bried&eacute</h1>
+    <div class="menu-container">
       <ul class="main-menu">
         <li><a href="#home">Home</a></li>
-        <li><a href="#ministry">Ministry</a></li>
-        <li><a href="#sermons">Sermons</a></li>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#sj">Social Justice</a></li>
+        <li class="dropdown">
+          <a href="#sermons">Worship</a>
+          <ul class="dropdown-content">
+            <li><a href="#sermons">Sermons</a></li>
+            <li><a href="#prayers">Prayers</a></li>
+            <li><a href="#rites-of-passage">Rites of Passage</a></li>
+            <li><a href="#time-for-all-ages">Time for All Ages</a></li>
+          </ul>
+        </li>
         <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-      </ul>                 
-    </header>
-   
-    <div id="container">
-      <div class="inner">
-        
-        <div id="content"> 
-          
-          <!-- Home page -->
-          <div id="home" class="content-region hide">  
-            <h2>Welcome to my ministry website!</h2>    
-            <h4>
-              I am a candidate for the Unitarian Universalist ministry, and I am currently seeking a congregation to serve as a settled minister.
-            </h4>                 
-            <img src="image.jpeg" alt="Image of Chloe preaching.">
-            <blockquote cite="URL_of_the_source">
-              <p>
-                Unitarian Universalists are neither a chosen people nor a people whose choices are made for them by theological authorities - ancient or otherwise. We are a people who choose.
-              </p>
-              <footer>— Forrest Church, <cite>A Chosen Faith: An Introduction to Unitarian Universalism</cite></footer>
-          </blockquote> 
-          </div>
-
-          <!-- about page -->
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
-          </div>
-          
-          <!-- contact page -->
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
-            </p>
-          </div>
-          
-        </div>
+  <!-- Main content -->
+  <div id="container">
+    <div class="inner">
+      <div id="content">
+        <div id="home-content"></div>
+        <div id="about-content"></div>
+        <div id="sermons-content"></div>
+        <div id="prayers-content"></div>
+        <div id="rites-content"></div>
+        <div id="all-ages-content"></div>
+        <div id="contact-content"></div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer>  
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-          <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
-      </a>
-      2023 Chloe Briede
-    </footer>
-     
-     
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
-  </body>
+  <!-- Footer -->
+  <footer>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+      <img alt="Creative Commons License" style="border-width:0"
+        src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+    </a>
+    2023 Chloë Briedé
+  </footer>
+
+  <!-- Load additional JS scripts here -->
+  <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
 </html>

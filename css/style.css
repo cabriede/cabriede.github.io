@@ -1,0 +1,140 @@
+/* Typography & Text styles */
+html {
+  font-size: 70%;
+}
+body {
+  font-size: 1.6em; 
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Palatino", "Libre Baskerville", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+}
+
+/* Utility classes */
+.hide {
+  display:none;
+}
+.show {
+  display:block;
+}
+
+/* Image Centered */
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Links */
+a {
+  font-weight: normal;
+  text-decoration: none; 
+  color:#375015;
+}
+a:hover {
+  outline: thin dotted;
+  text-decoration: underline;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: auto;
+  line-height: 1;
+  text-rendering: optimizeLegibility; /*  voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+h1 {margin-top: 2rem; color:#375015;}
+h3 {margin-top: 1rem; margin-bottom: 1.5rem; font-weight: 400;}
+
+/* Paragraphs */
+p {
+  margin: 0% 0% 2% 0%; 
+  text-align: justify;
+}
+
+/* Content regions */
+.content-region {
+  align-items: center; 
+  margin: 0% 7.5% 0% 7.5%; 
+}
+/* Column container */
+.columns-container {
+  display: flex;
+  align-items: center; 
+}
+.side-image {
+  width: 40%; 
+  height: auto;
+  margin: 0% 5% 2.5% 5%;
+}
+.side-text {
+  flex-grow: 1;
+}
+/* Container */
+.container {
+  align-items: center; 
+}
+/* Video Container */
+.video-container {
+  position: relative;
+  width: 90%;
+  height: 0;
+  padding-bottom: 56.25%; /* Aspect ratio of 16:9 */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 2%;
+}
+
+
+/* Quotes & Blockquotes */
+q {
+  quotes: '\00201C' '\00201D';
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+blockquote {
+  /*background-color: #F8F8F8;*/
+  border-left: 2px solid #9da790;
+  margin: 5% 10% 5% 10%;
+  padding: .75em 1em;
+}
+blockquote p:last-child {
+  margin-bottom: 0;  
+}
+
+/* Scroll Container */
+.scroll-container {
+  width: 75%; 
+  height: auto; 
+  /*overflow-y: scroll; /* Adds a vertical scrollbar */
+  border: 2px solid #375015; 
+  background-color: #eef8db; 
+  font-family: 'Times New Roman', serif; 
+  padding: 2.5% 5% 2.5% 5%; 
+  border-radius: 10px; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+  margin: 0% 0% 7% 0%;
+}
+
+
+
+
