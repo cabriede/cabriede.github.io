@@ -140,7 +140,7 @@ blockquote p:last-child {
 }
 
 
-/* Additional styles for phone & tablet screens */
+/* Phone-specific styles */
 @media screen and (max-width: 850px) {
   .content-region {
     align-items: center; 
@@ -150,15 +150,25 @@ blockquote p:last-child {
     flex-direction: column; /* Stack items vertically */
   }
   .side-image {
-    width: 100% !important; 
+    width: 75% !important; 
     margin-left: 0 !important; 
     margin-right: 0 !important; 
   }
   img{
-    width: 100% !important;
+    width: 80% !important;
   }
   p{text-align: start;}
   .scroll-container {
     width: 90%; 
+  }
+}
+
+/* Tablet-specific styles */
+@media screen and (max-width: 650px){
+  img{
+    width: 100% !important;
+  }
+  .side-image {
+    width: 100% !important; 
   }
 }
